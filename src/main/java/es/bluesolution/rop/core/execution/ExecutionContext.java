@@ -1,6 +1,7 @@
-package es.bluesolution.railway_framework.framework.functional_framework.execution;
+package es.bluesolution.rop.core.execution;
 
-import es.bluesolution.railway_framework.framework.functional_framework.Result;
+
+import es.bluesolution.rop.core.Result;
 import org.jspecify.annotations.NullMarked;
 
 import java.util.function.Supplier;
@@ -27,7 +28,7 @@ import java.util.function.Supplier;
  * - F#: computation expressions (result { ... }, async { ... })
  * - Elixir: Repo.transaction, Task.async, other effect executors
  *
- * @see TransactionExecutionContext for Spring TransactionTemplate implementation
+ * @see "TransactionExecutionContext (rop-spring) for Spring TransactionTemplate implementation"
  * @see NoOpExecutionContext for testing without effects
  */
 @NullMarked

@@ -3,7 +3,7 @@
 ## ✅ What Was Delivered
 
 ### 1. **SagaExecutionContext** (Core Implementation)
-**File:** `framework/functional_framework/execution/SagaExecutionContext.java` (~200 lines)
+**File:** `rop-core: es/bluesolution/rop/core/execution/SagaExecutionContext.java` (~200 lines)
 
 **What it does:**
 - Implements `ExecutionContext` interface for distributed transaction support
@@ -19,7 +19,7 @@
 - ✅ Composable (can wrap other contexts like TransactionExecutionContext)
 
 ### 2. **SagaAggregator** Interface
-**File:** `framework/functional_framework/execution/SagaAggregator.java` (~80 lines)
+**File:** `rop-core: es/bluesolution/rop/core/execution/SagaAggregator.java` (~80 lines)
 
 **What it does:**
 - Provides contract for aggregators that track compensations

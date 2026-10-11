@@ -463,11 +463,11 @@ aggregator.start()
 
 | File | Purpose |
 |------|---------|
-| `framework/functional_framework/execution/ExecutionContext.java` | Core interface |
-| `framework/functional_framework/execution/TransactionExecutionContext.java` | Spring transactions |
-| `framework/functional_framework/execution/NoOpExecutionContext.java` | Testing |
-| `framework/functional_framework/execution/ComposableExecutionContext.java` | Composition base |
-| `framework/functional_framework/execution/LoggingExecutionContext.java` | Logging wrapper |
+| `rop-core: es/bluesolution/rop/core/execution/ExecutionContext.java` | Core interface |
+| `rop-spring: es/bluesolution/rop/spring/execution/TransactionExecutionContext.java` | Spring transactions |
+| `rop-core: es/bluesolution/rop/core/execution/NoOpExecutionContext.java` | Testing |
+| `rop-core: es/bluesolution/rop/core/execution/ComposableExecutionContext.java` | Composition base |
+| `rop-core: es/bluesolution/rop/core/execution/LoggingExecutionContext.java` | Logging wrapper |
 | `framework/Result.java` | The `.within()` method |
 | `config/ExecutionContextConfiguration.java` | Spring beans |
 

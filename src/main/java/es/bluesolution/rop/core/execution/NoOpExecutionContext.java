@@ -1,6 +1,7 @@
-package es.bluesolution.railway_framework.framework.functional_framework.execution;
+package es.bluesolution.rop.core.execution;
 
-import es.bluesolution.railway_framework.framework.functional_framework.Result;
+
+import es.bluesolution.rop.core.Result;
 import lombok.extern.slf4j.Slf4j;
 import org.jspecify.annotations.NullMarked;
 
@@ -31,7 +32,7 @@ import java.util.function.Supplier;
  * This allows you to test pure stages independently, which is the ROP ideal.
  *
  * @see ExecutionContext for the interface definition
- * @see TransactionExecutionContext for transactional execution
+ * @see "TransactionExecutionContext (rop-spring) for transactional execution"
  */
 @NullMarked
 @Slf4j

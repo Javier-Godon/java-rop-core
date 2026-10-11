@@ -1,6 +1,7 @@
-package es.bluesolution.railway_framework.framework.functional_framework.execution;
+package es.bluesolution.rop.core.execution;
 
-import es.bluesolution.railway_framework.framework.functional_framework.Result;
+
+import es.bluesolution.rop.core.Result;
 import lombok.RequiredArgsConstructor;
 import org.jspecify.annotations.NullMarked;
 
@@ -24,7 +25,7 @@ import java.util.function.Supplier;
  * // Executes with: logging -> transaction -> computation
  *
  * @see ExecutionContext for the interface definition
- * @see TransactionExecutionContext for transactional execution
+ * @see "TransactionExecutionContext (rop-spring) for transactional execution"
  * @see LoggingExecutionContext for logging execution
  */
 @NullMarked

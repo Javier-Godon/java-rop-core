@@ -1,10 +1,10 @@
-package es.bluesolution.railway_framework.framework.functional_framework;
+package es.bluesolution.rop.core;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 
-import static es.bluesolution.railway_framework.framework.functional_framework.FailureResultDescription.ErrorCode.*;
+import static es.bluesolution.rop.core.FailureResultDescription.ErrorCode.*;
 import static org.junit.jupiter.api.Assertions.*;
 
 /**

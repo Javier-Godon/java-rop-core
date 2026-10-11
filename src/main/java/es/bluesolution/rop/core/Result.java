@@ -1,6 +1,6 @@
-package es.bluesolution.railway_framework.framework.functional_framework;
+package es.bluesolution.rop.core;
 
-import es.bluesolution.railway_framework.framework.functional_framework.execution.ExecutionContext;
+import es.bluesolution.rop.core.execution.ExecutionContext;
 import org.jspecify.annotations.Nullable;
 
 import java.util.List;

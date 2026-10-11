@@ -12,7 +12,7 @@ A **complete, generic, tutorial-grade framework documentation suite** for the Ex
 
 All documentation is in:
 ```
-/railway_framework/src/main/java/es/bluesolution/railway_framework/framework/functional_framework/execution/
+rop-core/src/main/java/es/bluesolution/rop/core/execution/
 ```
 
 **NOT in the `/docs/` folder** — this ensures it's always with the code.

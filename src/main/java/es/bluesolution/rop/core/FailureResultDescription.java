@@ -1,4 +1,4 @@
-package es.bluesolution.railway_framework.framework.functional_framework;
+package es.bluesolution.rop.core;
 
 import java.time.Instant;
 import java.util.Objects;

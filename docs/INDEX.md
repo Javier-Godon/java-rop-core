@@ -263,7 +263,7 @@ This allows:
 ## 🔗 File Tree (For Reference)
 
 ```
-src/main/java/.../framework/functional_framework/execution/
+rop-core/src/main/java/es/bluesolution/rop/core/execution/
 │
 ├── 00_FRAMEWORK_START_HERE.md ← Start here
 ├── 01_MENTAL_MODEL_EXPLAINED.md

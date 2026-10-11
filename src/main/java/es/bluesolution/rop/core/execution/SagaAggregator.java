@@ -1,6 +1,6 @@
-package es.bluesolution.railway_framework.framework.functional_framework.execution;
+package es.bluesolution.rop.core.execution;
 
-import es.bluesolution.railway_framework.framework.functional_framework.Result;
+import es.bluesolution.rop.core.Result;
 
 import java.util.function.Supplier;
 

@@ -166,7 +166,7 @@ public class CustomConfig {
    - Updated class-level documentation
 
 **Created Files:**
-2. `/railway_framework/src/main/java/.../framework/functional_framework/execution/LIBRARY_INTEGRATION_GUIDE.md`
+2. `/railway_framework/rop-core/src/main/java/es/bluesolution/rop/core/execution/LIBRARY_INTEGRATION_GUIDE.md`
    - 600+ lines of comprehensive integration guidance
    - Zero-config, override, and publishing instructions
    - 4 concrete use case examples
@@ -220,7 +220,7 @@ class ExecutionContextAutoWiringTest {
 ## Documentation Structure
 
 ```
-framework/functional_framework/execution/
+rop-core/src/main/java/es/bluesolution/rop/core/execution/
 ├── INDEX.md (master index - START HERE)
 ├── 00_FRAMEWORK_START_HERE.md
 ├── 01_MENTAL_MODEL_EXPLAINED.md

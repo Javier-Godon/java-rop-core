@@ -1,7 +1,7 @@
-package es.bluesolution.railway_framework.framework.functional_framework.execution;
+package es.bluesolution.rop.core.execution;
 
-import es.bluesolution.railway_framework.framework.functional_framework.FailureResultDescription;
-import es.bluesolution.railway_framework.framework.functional_framework.Result;
+import es.bluesolution.rop.core.FailureResultDescription;
+import es.bluesolution.rop.core.Result;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
@@ -13,8 +13,8 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.function.Supplier;
 
-import static es.bluesolution.railway_framework.framework.functional_framework.FailureResultDescription.ErrorCode.TECHNICAL_ERROR;
-import static es.bluesolution.railway_framework.framework.functional_framework.FailureResultDescription.ErrorCode.VALIDATION_ERROR;
+import static es.bluesolution.rop.core.FailureResultDescription.ErrorCode.TECHNICAL_ERROR;
+import static es.bluesolution.rop.core.FailureResultDescription.ErrorCode.VALIDATION_ERROR;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 

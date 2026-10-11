@@ -234,7 +234,7 @@ var result = pipeline.within(txCtx);
 
 ### 1. ExecutionContext Interface
 
-**Location:** `framework/functional_framework/execution/ExecutionContext.java`
+**Location:** `rop-core: es/bluesolution/rop/core/execution/ExecutionContext.java`
 
 **Purpose:** Define the contract for "how to execute" a Result pipeline.
 
@@ -280,7 +280,7 @@ txContext.execute(() -> pipeline);  // ← Supplier is created
 
 ### 2. TransactionExecutionContext
 
-**Location:** `framework/functional_framework/execution/TransactionExecutionContext.java`
+**Location:** `rop-spring: es/bluesolution/rop/spring/execution/TransactionExecutionContext.java`
 
 **Purpose:** Execute a Result pipeline within a Spring database transaction.
 
@@ -352,7 +352,7 @@ What happens:
 
 ### 3. NoOpExecutionContext
 
-**Location:** `framework/functional_framework/execution/NoOpExecutionContext.java`
+**Location:** `rop-core: es/bluesolution/rop/core/execution/NoOpExecutionContext.java`
 
 **Purpose:** Execute without any transaction wrapper.
 
@@ -388,7 +388,7 @@ void validateRejectsEmptyOrders() {
 
 ### 4. ComposableExecutionContext
 
-**Location:** `framework/functional_framework/execution/ComposableExecutionContext.java`
+**Location:** `rop-core: es/bluesolution/rop/core/execution/ComposableExecutionContext.java`
 
 **Purpose:** Base class for building context wrappers that compose.
 
@@ -446,7 +446,7 @@ loggedCtx.execute(() -> pipeline);
 
 ### 5. LoggingExecutionContext
 
-**Location:** `framework/functional_framework/execution/LoggingExecutionContext.java`
+**Location:** `rop-core: es/bluesolution/rop/core/execution/LoggingExecutionContext.java`
 
 **Purpose:** Add structured logging to any ExecutionContext.
 
