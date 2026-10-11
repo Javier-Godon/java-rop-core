@@ -8,7 +8,7 @@
     <packaging>jar</packaging>
     <name>ROP core</name>
     <description>Railway-oriented programming (ROP) functional framework — rop-core</description>
-    <url>https://github.com/Javier-Godon/erp-backend</url>
+    <url>https://github.com/Javier-Godon/java-rop-core</url>
     <licenses>
         <license>
             <name>MIT License</name>
@@ -22,8 +22,9 @@
         </developer>
     </developers>
     <scm>
-        <url>https://github.com/Javier-Godon/erp-backend</url>
-        <connection>scm:git:https://github.com/Javier-Godon/erp-backend.git</connection>
+        <url>https://github.com/Javier-Godon/java-rop-core</url>
+        <connection>scm:git:https://github.com/Javier-Godon/java-rop-core.git</connection>
+        <developerConnection>scm:git:git@github.com:Javier-Godon/java-rop-core.git</developerConnection>
     </scm>
 
     <properties>
@@ -145,7 +146,21 @@
     </build>
 
     <profiles>
-        <!-- Publish to Nexus: ./mvnw -f framework-libs/pom.xml deploy -Pnexus (credentials in ~/.m2/settings.xml) -->
+        <!-- Publish to GitHub Packages (CI): ./mvnw deploy -Pgithub (server id "github") -->
+        <profile>
+            <id>github</id>
+            <distributionManagement>
+                <repository>
+                    <id>github</id>
+                    <url>https://maven.pkg.github.com/Javier-Godon/java-rop-core</url>
+                </repository>
+                <snapshotRepository>
+                    <id>github</id>
+                    <url>https://maven.pkg.github.com/Javier-Godon/java-rop-core</url>
+                </snapshotRepository>
+            </distributionManagement>
+        </profile>
+        <!-- Publish to Nexus: ./mvnw deploy -Pnexus (credentials in ~/.m2/settings.xml) -->
         <profile>
             <id>nexus</id>
             <properties>
