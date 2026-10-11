@@ -1,8 +1,10 @@
 package es.bluesolution.rop.core.execution;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 
 import es.bluesolution.rop.core.Result;
-import lombok.extern.slf4j.Slf4j;
 import org.jspecify.annotations.NullMarked;
 
 import java.util.function.Supplier;
@@ -35,8 +37,9 @@ import java.util.function.Supplier;
  * @see "TransactionExecutionContext (rop-spring) for transactional execution"
  */
 @NullMarked
-@Slf4j
 public class NoOpExecutionContext implements ExecutionContext {
+
+    private static final Logger log = LoggerFactory.getLogger(NoOpExecutionContext.class);
 
     /**
      * Execute the computation immediately, with no wrapping.

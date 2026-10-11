@@ -1,8 +1,10 @@
 package es.bluesolution.rop.core.execution;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 
 import es.bluesolution.rop.core.Result;
-import lombok.extern.slf4j.Slf4j;
 import org.jspecify.annotations.NullMarked;
 
 import java.util.function.Supplier;
@@ -34,8 +36,9 @@ import java.util.function.Supplier;
  * @see ComposableExecutionContext for composition pattern
  */
 @NullMarked
-@Slf4j
 public final class LoggingExecutionContext extends ComposableExecutionContext {
+
+    private static final Logger log = LoggerFactory.getLogger(LoggingExecutionContext.class);
 
     public LoggingExecutionContext(ExecutionContext next) {
         super(next);

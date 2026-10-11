@@ -2,7 +2,6 @@ package es.bluesolution.rop.core.execution;
 
 
 import es.bluesolution.rop.core.Result;
-import lombok.RequiredArgsConstructor;
 import org.jspecify.annotations.NullMarked;
 
 import java.util.function.Supplier;
@@ -29,7 +28,6 @@ import java.util.function.Supplier;
  * @see LoggingExecutionContext for logging execution
  */
 @NullMarked
-@RequiredArgsConstructor
 public abstract class ComposableExecutionContext implements ExecutionContext {
 
     /**
@@ -37,6 +35,10 @@ public abstract class ComposableExecutionContext implements ExecutionContext {
      * Implementations should call next.execute(computation) to delegate.
      */
     protected final ExecutionContext next;
+
+    protected ComposableExecutionContext(ExecutionContext next) {
+        this.next = next;
+    }
 
     /**
      * Template method that subclasses override to add behavior.

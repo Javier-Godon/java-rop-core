@@ -1,8 +1,10 @@
 package es.bluesolution.rop.core.execution;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 
 import es.bluesolution.rop.core.Result;
-import lombok.extern.slf4j.Slf4j;
 import org.jspecify.annotations.NullMarked;
 
 import java.util.ArrayList;
@@ -45,9 +47,10 @@ import java.util.function.Supplier;
  * @see OutboxAggregator for aggregator contract
  * @see ExecutionContext for base strategy pattern
  */
-@Slf4j
 @NullMarked
 public class OutboxExecutionContext implements ExecutionContext {
+
+    private static final Logger log = LoggerFactory.getLogger(OutboxExecutionContext.class);
 
     private static final ThreadLocal<List<Supplier<Result<OutboxAggregator.OutboxEntry>>>> OUTBOX_ENTRIES =
             ThreadLocal.withInitial(ArrayList::new);

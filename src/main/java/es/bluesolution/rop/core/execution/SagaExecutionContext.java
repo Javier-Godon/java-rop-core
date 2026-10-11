@@ -1,9 +1,10 @@
 package es.bluesolution.rop.core.execution;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 
 import es.bluesolution.rop.core.Result;
-import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -37,8 +38,9 @@ import java.util.function.Supplier;
  *
  * @see SagaAggregator - Aggregator interface for tracking compensations
  */
-@Slf4j
 public class SagaExecutionContext implements ExecutionContext {
+
+    private static final Logger log = LoggerFactory.getLogger(SagaExecutionContext.class);
 
     private final ExecutionContext next;
     private final ThreadLocal<List<Supplier<Result<?>>>> compensations = ThreadLocal.withInitial(ArrayList::new);
